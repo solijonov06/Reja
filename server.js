@@ -2,6 +2,17 @@ console.log("Web server started");
 const express = require('express');
 const app = express();
 const http = require('http');
+const fs = require("fs");
+
+let user;
+fs.readFile("data/user.json", "utf-8", function (err, data) {
+    if (err) {
+        console.log("Error reading user data:", err);
+    } else {
+        user = JSON.parse(data);
+        console.log("User data loaded successfully:", user);
+    }
+});
 
 //1: Kirish code
 app.use(express.static('public'));
@@ -29,6 +40,10 @@ app.post("/create-item", function (req, res) {
 
 app.get("/", function (req,res) {
       res.render("harid2");
+});
+
+app.get("/author", function (req,res) {
+      res.render("author", {user: user});
 });
 
 
