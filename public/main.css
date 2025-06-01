@@ -316,7 +316,7 @@
     height: 153px;
     margin-left: 37px;
     margin-right: 47px;
-    background-color: aqua;
+    
 }
 
 
@@ -390,6 +390,13 @@
    
 
 }
+.left_frame .left_3 .left_3-2-3{
+    position:relative;
+    width: 220px;
+    height: 4px;
+    border: 2.5px solid rgb(255, 180, 0);
+    border-radius: 30px;
+}
 
 .main_frame .left_3 .left_3-3{
     position: relative;
@@ -433,6 +440,15 @@
     
 }
 
+.main_frame .left_3 .left_3-3-3{
+    position:relative;
+    width: 190px;
+    height: 4px;
+    border-radius: 30px;
+    /* Yellow */
+    background: rgb(255, 180, 0);
+}
+
 .main_frame .left_3 .left_3-4{
     position: relative;
     width: 220px;
@@ -474,6 +490,15 @@
    
 
 }
+.main_frame .left_3 .left_3-4-3{
+    position:relative;
+    width: 190px;
+    height: 4px;
+    border-radius: 30px;
+    /* Yellow */
+    background: rgb(255, 180, 0);
+}
+
 
 
 
@@ -484,8 +509,80 @@
     height: 242px;
     margin-left: 38px;
     margin-right: 47px;
-    background-color: aqua;
+    
 }
+
+.main_frame .left_frame .left_4 .left_4-1{
+    position: relative;
+    width: 46.21px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+    
+}
+
+.main_frame .left_frame .left_4 .left_4-20{
+    position: relative;
+    width: 220px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.main_frame .left_frame .left_4 .left_4-30 {
+     position:relative;
+    width: 220px;
+    height: 4px;
+    border: 2.5px solid rgb(255, 180, 0);
+    border-radius: 30px;
+    background:rgb(255, 180, 0);
+}
+
+.main_frame .left_frame .left_4 .left_4-7{
+        position:relative;
+    width: 190px;
+    height: 4px;
+    border-radius: 30px;
+    /* Yellow */
+    background: rgb(255, 180, 0);
+    
+}
+
+.main_frame .left_frame .left_4 .left_4-9{
+      position:relative;
+    width: 170px;
+    height: 4px;
+    border-radius: 30px;
+    /* Yellow */
+    background: rgb(255, 180, 0);
+
+    
+}
+
+.main_frame .left_frame .left_4 .left_4-11{
+      position:relative;
+    width: 180px;
+    height: 4px;
+    border-radius: 30px;
+    /* Yellow */
+    background: rgb(255, 180, 0);
+
+    
+}
+
 
 .main_frame .left_5{
     position: relative;
@@ -493,5 +590,185 @@
     height: 148px;
     margin-left: 47px;
     margin-right: 72px;
-    background-color: aqua;
+    
+    display:flex;
+    flex-direction: column;
+    
+    
 }
+.main_frame .left_frame .left_5 .left_5-0{
+     position: relative;
+    width: 46.21px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+    
+}
+
+.main_frame .left_frame .left_5 .left_5-10{
+    position: relative;
+    display : flex;
+    flex-direction: row;
+    
+    
+
+}
+
+.main_frame .left_frame .left_5 .left_5-1, .left_5-2, .left_5-3, .left_5-4, .left_5-5, .left_5-6, .left_5-7, .left_5-8{
+  margin-top: 4px;
+    position: relative;
+    margin-bottom: 6px;
+   
+} 
+.main_frame .left_frame .left_5 .left_5-20{
+font-size:19px;
+color:rgb(118, 118, 118);
+align-items: row;
+}
+.left_frame .left_5 .icons{
+    width: 30px
+}
+
+.main_frame .midd_frame .midd_up{
+    position:relative;
+    width: 971px;
+    height: 454.33px;
+    background:aqua;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_frame .midd_frame .midd_up .midd_up-1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_frame .midd_frame .midd_up .midd_up-1 .midd_up_1-1{
+    position: relative;
+   width: 499.51px;
+    height: 116.74px;
+    margin-top: 99.15px;
+    margin-left: 238.43x;
+    margin-right: 56.07px;
+    margin-left: 61px;
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.main_frame .midd_frame .midd_up .midd_up-1 .midd_up_1-2{
+   position:relative;
+    width: 424.44px;
+    height: 85.61px;
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+    margin-left: 61px;
+    margin-top: 17px;
+}
+.main_frame .midd_frame .midd_up .midd_up_1-3{
+    position: relative;
+    width: 154px;
+    height: 51px;
+    margin-left: 61px;
+    margin-top: 22.78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 16px 32px 16px 32px;
+    background: rgb(255, 180, 0);
+}
+
+
+
+.main_frame .midd_frame .midd_up .midd_up-2{
+    
+    margin-right:61.65px;
+}
+
+
+
+
+
+.main_frame .midd_frame .midd_down{
+    width: 970px;
+    height: 653px;
+     background:aqua;
+     margin-top: 146px;
+}
+
+.main_frame .midd_frame .midd_down .midd_down-1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_frame .midd_frame .midd_down .midd_down-1 .midd_down-1-1{
+    position: relative;
+   width: 193px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+.main_frame .midd_frame .midd_down .midd_down-1 .midd_down-1-2{
+    position: relative;
+    width: 438px;
+    height: 68px;
+     margin-bottom: 50px;
+     background: rgb(255, 255, 255);
+}
+.main_frame .midd_frame .midd_down .midd_down-2{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+   
+}
+
+.main_frame .midd_frame .midd_down .midd_down-2 .midd_down-2-0{
+    width: 310px;
+    height: 225px;
+    background: rgb(255, 252, 252);
+    
+    
+    
+}
+
