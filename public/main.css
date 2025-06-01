@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: white
+    background: rgb(229, 229, 229);
 }
 .frame .main_frame{
     width: 1440px;
@@ -15,7 +15,7 @@
     flex-direction: row;
     align-items: center;
     margin-top: 2px;
-    background-color: rgb(206, 218, 99);
+    
 }
 .frame .main_frame .left_frame{
     position: relative;
@@ -261,7 +261,7 @@
     letter-spacing: 0%;
     text-align: right;
     text-transform: capitalize;
-    color: rgb(70, 216, 78);
+
     
     
 }
@@ -643,9 +643,9 @@ align-items: row;
     position:relative;
     width: 971px;
     height: 454.33px;
-    background:aqua;
     display: flex;
     flex-direction: row;
+    background: white;
 }
 
 .main_frame .midd_frame .midd_up .midd_up-1{
@@ -718,7 +718,6 @@ align-items: row;
 .main_frame .midd_frame .midd_down{
     width: 970px;
     height: 653px;
-     background:aqua;
      margin-top: 146px;
 }
 
@@ -753,7 +752,7 @@ align-items: row;
     width: 438px;
     height: 68px;
      margin-bottom: 50px;
-     background: rgb(255, 255, 255);
+    
 }
 .main_frame .midd_frame .midd_down .midd_down-2{
      display: flex;
@@ -767,8 +766,54 @@ align-items: row;
     width: 310px;
     height: 225px;
     background: rgb(255, 252, 252);
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 13px;
     
     
     
 }
 
+.main_frame .midd_frame .midd_down .midd_down-2 .midd_down-2-0 .midd_down_icon-0{
+    position:relative;
+    width: 65.88px;
+    height: 53.13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.main_frame .midd_frame .midd_down .midd_down-2 .midd_down-2-0 .part-2{
+    color: rgb(43, 43, 43);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+.main_frame .midd_frame .midd_down .midd_down-2 .midd_down-2-0 .part-3{
+    color: rgb(118, 118, 118);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.main_frame .midd_frame .midd_down .midd_down-2 .midd_down-2-0 .order{
+    color: rgb(255, 180, 0);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
