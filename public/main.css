@@ -817,3 +817,27 @@ align-items: row;
     letter-spacing: 0%;
     text-align: left;
 }
+
+.frame .main_frame .right_frame{
+    position: relative;
+    background: rgb(252, 252, 252);
+    width: 108px;
+    height: 1315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.frame .main_frame .right_frame .right_frame_menu{
+    width: 65px;
+    height: 493px;
+    margin-top: 254px;
+    margin-bottom:568px;
+}
+
+.frame .main_frame .right_frame .right_frame_menu .right_frame-menu-1{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
