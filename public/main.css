@@ -654,6 +654,10 @@ align-items: row;
     flex-direction: column;
 }
 
+/* .midd_shapes_1{
+    top: 15px;
+} */
+
 .main_frame .midd_frame .midd_up .midd_up-1 .midd_up_1-1{
     position: relative;
    width: 499.51px;
