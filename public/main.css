@@ -654,9 +654,41 @@ align-items: row;
     flex-direction: column;
 }
 
-/* .midd_shapes_1{
+.midd_shapes{
     top: 15px;
-} */
+    position: absolute
+}
+
+.midd_shapes .midd_shapes_1{
+    position:absolute;
+    top: 15px;
+
+}
+.midd_shapes .midd_shapes_2{
+    position:absolute;
+    top: 55px;
+    left: 160px;
+}
+.midd_shapes .midd_shapes_3{
+    position:absolute;
+    top: 90px;
+    left: 520px;
+}
+.midd_shapes .midd_shapes_4{
+    position:absolute;
+    top: 155px;
+    left: 900px;
+}
+.midd_shapes .midd_shapes_5{
+    position:absolute;
+    top: 295px;
+    left: 600px;
+}
+.midd_shapes .midd_shapes_6{
+    position:absolute;
+    top: 365px;
+    left: 320px;
+}
 
 .main_frame .midd_frame .midd_up .midd_up-1 .midd_up_1-1{
     position: relative;

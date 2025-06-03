@@ -49,7 +49,7 @@ app.get("/author", function (req,res) {
 
 
 const server = http.createServer(app);
-let PORT = 3001;
+let PORT = 3000;
 server.listen(PORT, function () {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
