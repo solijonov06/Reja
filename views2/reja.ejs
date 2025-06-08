@@ -24,7 +24,7 @@
         <div class="d-flex align-items-center">
           <input type="text" 
                  class="form-control me-3" 
-                 name="item" 
+                 name="reja" 
                  style="flex: 1;" 
                  autofocus 
                  autocomplete="off">
@@ -32,7 +32,25 @@
         </div>
       </form> <!-- ✅ You forgot to close the form -->
     </div>
-    <button id="clean-all" class="btn btn-danger " style="border-radius: 20px">Clean All Plans</button>
+    
+
+    <ul id="item-list" class="list-group pb-5">
+      <%items.map(function(item){%>
+      <li
+        class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
+      <span class="item-text"> <%= item.reja%></span>
+      <div>
+        <button  class="edit-me btn btn-secondary btn-sm mr-1">
+          Change          
+        </button>
+        <button data-id="<%=item._id%>" id="clean-all" class="btn btn-danger " style="border-radius: 20px">Clean All Plans</button>
+      </div>
+      
+
+      </li>
+      <% }) %>
+    </ul>
+    
 
   </div>
 
