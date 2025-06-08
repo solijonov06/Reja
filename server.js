@@ -39,7 +39,7 @@ app.post("/create-item", function (req, res) {
 });
 
 app.get("/", function (req,res) {
-      res.render("harid2");
+      res.render("reja");
 });
 
 app.get("/author", function (req,res) {
@@ -51,6 +51,6 @@ app.get("/author", function (req,res) {
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function () {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT} `);
 });
 //5: Error handling code
