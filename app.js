@@ -26,26 +26,13 @@ app.use(express.urlencoded({ extended: true }));
 app.set('views', 'views2');
 app.set('view engine', 'ejs');
 
-//4: Routing code
-// app.get('/hello', function (req, res){
 
-//     res.end(`<h1 style = "background: green">Hello World</h1>`);
-// });
-
-// app.get('/gifts', function (req, res) {
-//         res.end(`<h1 style = "background: yellow">You are onpage of gifts.</h1>`);
-//     });
 app.post("/create-item", function (req, res) {
      console.log("user entered /create-item");
     console.log(req.body);
     const new_reja = req.body.reja;
     db.collection("plans").insertOne({reja:new_reja},(err,data)=>{
-        if (err){
-            console.log(err);
-            res.end("Something went wrong");
-        }else{
-            res.end("New plan created successfully");
-        }
+     res.json= (data.ops[0])
     });
 });
 
