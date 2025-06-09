@@ -1,5 +1,5 @@
 const http = require('http');
-const mongodb = require('mongodb')
+const mongodb = require('mongodb');
 
 let db;
 const connectionString =
@@ -16,7 +16,7 @@ mongodb.MongoClient.connect(
             if (err) console.log("ERROR on connection to MongoDB");
             else{
                 console.log("Connected to MongoDB");
-                const db = client.db("Reja"); // <-- use your actual DB name here
+                const db = client.db("Reja"); 
                 module.exports = db;
 
                 const app = require('./app.js');
