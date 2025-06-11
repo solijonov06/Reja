@@ -1,16 +1,168 @@
+/*                      task C                                */
+/*Shunday class tuzing tuzing nomi Shop, va uni constructoriga 3 hil mahsulot pass bolsin,
+ hamda classning 3ta methodi bolsin, biri qoldiq, biri sotish va biri qabul.
+  Har bir method ishga tushgan vaqt ham log qilinsin.
+  
+  return hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud! shop.sotish('non', 3) &
+   shop.qabul('cola', 4) & shop.qoldiq() return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud!
+  */
 
-/*                           Task B*/ 
-function countDigits(str) {
-  let count = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] >= '0' && str[i] <= '9') {
-      count++;
+const moment = require('moment');
+
+class Shop {
+  constructor(bread, lagman, cola) {
+    this.bread = bread;
+    this.lagman = lagman;
+    this.cola = cola;
+  }
+
+  getTime() {
+    return moment().format('HH:mm:ss');
+  }
+
+  receive(itemName, amount) {
+    this[itemName] += amount;  //kiritilgan  parametr nomi bilan saqlangan qiymatni qaytaradi this.itemName dan farqli ravishda
+    console.log(`Received: ${amount} ${itemName} (${this.getTime()})`);
+  }
+
+  sell(itemName, amount) {
+    if (this[itemName] >= amount) {
+      this[itemName] -= amount;
+      console.log(`Sold: ${amount} ${itemName} (${this.getTime()})`);
+    } else {
+      console.log(`Error: Not enough ${itemName} (${this.getTime()})`);
     }
   }
-  return count;
+
+  stock() {
+    console.log(
+      `At ${this.getTime()}, there are ${this.bread} bread, ${this.lagman} lagman, and ${this.cola} cola in stock.`
+    );
+  }
 }
 
-console.log(countDigits("gf2567")); 
+
+const shop = new Shop(45, 15, 22);
+
+
+shop.stock();                  
+shop.sell("bread", 4);         
+shop.receive("cola",30);      
+shop.stock();                  
+
+
+
+
+
+
+
+
+
+
+
+// /*
+
+
+//   //solution
+//   const moment = require('moment');
+// const time = moment().format('HH:mm:ss');
+
+//   class Shop {
+//     //state
+//     time;
+//     name;
+//     number;
+
+
+//     constructor(name, number) {
+//       this.name = name;
+//       this.number = number;
+//       this.time = time;
+      
+//     }
+
+//     //methods
+//     receive(initialNumber) {
+    
+//       console.log(`Received ${initialNumber} ${this.name} at ${this.time}`);
+//       // logic for receiving
+//       initialNumber = this.number + initialNumber;
+//     }
+
+
+
+//     sell(name,sold) {
+//       return console.log(`Selling ${this.sold} ${this.name} at ${time}`);
+//       // logic for selling
+      
+
+
+
+//     }
+
+//     reminder(){
+//       leftover = initialNumber - sold;
+//       return console.log(`Remaining ${leftover} ${this.name} at ${this.time}`);
+//           }
+
+
+//   }
+
+// //     receive(name, number) 
+// const shop = new Shop("apple", 10);
+// shop.sell("apple", 5);
+// shop.receive("apple", 3);
+// shop.reminder();
+
+
+
+// const moment = require('moment');
+
+// class Shop {
+//   constructor(non, lagmon, cola, lag) {
+//     this.name = name;
+//     this.initialNumber = number;
+//     this.sold = 0;
+//     this.time = moment().format('HH:mm:ss');
+//   }
+
+//   receive(amount) {
+//     this.initialNumber += amount;
+//     console.log(`Received ${amount} ${this.name} at ${this.time}`);
+//   }
+
+//   sell(amount) {
+//     this.sold += amount;
+//     console.log(`Selling ${amount} ${this.name} at ${this.time}`);
+//   }
+
+//   reminder() {
+//     const leftover = this.initialNumber - this.sold;
+//     console.log(`Remaining ${leftover} ${this.name} at ${this.time}`);
+//   }
+// }
+
+// const shop = new Shop("apple", 10);
+// shop.sell(5);
+// shop.receive(3);
+// shop.reminder();
+
+
+
+
+
+// /*                           Task B*/ 
+// function countDigits(str) {
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] >= '0' && str[i] <= '9') {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(countDigits("gf2567")); 
 
 
 
