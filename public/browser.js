@@ -54,7 +54,36 @@ document.addEventListener("click", function(e) {
     // }
    }
   //  { alert("You pressed delete button")}
-  if(e.target.classlist.contains("edit-me")){
-    alert("You pressed edit button")
+
+
+ //edit oper 
+  if(e.target.classList.contains("edit-me")){
+    let userInput = prompt(
+      "Make changes",
+      e.target.parentElement.parentElement.querySelector(".item-text").innerHTML);
+    if(userInput){
+      axios.post("/edit-item",{
+        id: e.target.getAttribute("data-id"),
+        new_input: userInput,        
+      })
+      .then((response)=>{
+        console.log(response.data);
+        e.target.parentElement.parentElement.querySelector(
+          ".item-text")
+          .innerHTML = userInput;
+      })
+      .catch((err)=>{
+        console.log("Something went wrong, try again later.");
+      })
+    }
   }
 });
+
+
+document.getElementById("clean-all").addEventListener("click", function() {
+  axios.post("/delete-all",{delete_all: true}).then(response=>{
+    console.log(response.data);
+    document.location.reload();
+  
+  })
+})

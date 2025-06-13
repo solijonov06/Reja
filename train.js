@@ -1,3 +1,35 @@
+/*                                     task D                                                      */ 
+/*   agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+*/function checkContent(str1, str2) {
+  
+  if (str1.length !== str2.length) {
+    console.log("Matnlar bir xil harflardan iborat emas");
+    return false;
+  }
+
+  
+  const sorted1 = str1.split('').sort().join('');
+  const sorted2 = str2.split('').sort().join('');
+
+  if (sorted1 === sorted2) {
+    console.log("Matnlar bir xil harflardan iborat");
+    return true;
+  } else {
+    console.log(true);
+    console.log("Matnlar bir xil harflardan iborat emas");
+    return false;
+  }
+}
+ console.log("Natija:", checkContent("rewq3", "k3wer"));
+
+
+
+
+
+
+
+
 /*                      task C                                */
 /*Shunday class tuzing tuzing nomi Shop, va uni constructoriga 3 hil mahsulot pass bolsin,
  hamda classning 3ta methodi bolsin, biri qoldiq, biri sotish va biri qabul.
@@ -7,48 +39,48 @@
    shop.qabul('cola', 4) & shop.qoldiq() return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud!
   */
 
-const moment = require('moment');
+// const moment = require('moment');
 
-class Shop {
-  constructor(bread, lagman, cola) {
-    this.bread = bread;
-    this.lagman = lagman;
-    this.cola = cola;
-  }
+// class Shop {
+//   constructor(bread, lagman, cola) {
+//     this.bread = bread;
+//     this.lagman = lagman;
+//     this.cola = cola;
+//   }
 
-  getTime() {
-    return moment().format('HH:mm:ss');
-  }
+//   getTime() {
+//     return moment().format('HH:mm:ss');
+//   }
 
-  receive(itemName, amount) {
-    this[itemName] += amount;  //kiritilgan  parametr nomi bilan saqlangan qiymatni qaytaradi this.itemName dan farqli ravishda
-    console.log(`Received: ${amount} ${itemName} (${this.getTime()})`);
-  }
+//   receive(itemName, amount) {
+//     this[itemName] += amount;  //kiritilgan  parametr nomi bilan saqlangan qiymatni qaytaradi this.itemName dan farqli ravishda
+//     console.log(`Received: ${amount} ${itemName} (${this.getTime()})`);
+//   }
 
-  sell(itemName, amount) {
-    if (this[itemName] >= amount) {
-      this[itemName] -= amount;
-      console.log(`Sold: ${amount} ${itemName} (${this.getTime()})`);
-    } else {
-      console.log(`Error: Not enough ${itemName} (${this.getTime()})`);
-    }
-  }
+//   sell(itemName, amount) {
+//     if (this[itemName] >= amount) {
+//       this[itemName] -= amount;
+//       console.log(`Sold: ${amount} ${itemName} (${this.getTime()})`);
+//     } else {
+//       console.log(`Error: Not enough ${itemName} (${this.getTime()})`);
+//     }
+//   }
 
-  stock() {
-    console.log(
-      `At ${this.getTime()}, there are ${this.bread} bread, ${this.lagman} lagman, and ${this.cola} cola in stock.`
-    );
-  }
-}
-
-
-const shop = new Shop(45, 15, 22);
+//   stock() {
+//     console.log(
+//       `At ${this.getTime()}, there are ${this.bread} bread, ${this.lagman} lagman, and ${this.cola} cola in stock.`
+//     );
+//   }
+// }
 
 
-shop.stock();                  
-shop.sell("bread", 4);         
-shop.receive("cola",30);      
-shop.stock();                  
+// const shop = new Shop(45, 15, 22);
+
+
+// shop.stock();                  
+// shop.sell("bread", 4);         
+// shop.receive("cola",30);      
+// shop.stock();                  
 
 
 
