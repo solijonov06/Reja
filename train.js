@@ -1,27 +1,43 @@
+function content (string1,string2){
+    for(i of string1){
+      for(b of string2){
+   if(i == b){
+   console.log(true);
+} else{
+ console.log(false);
+}
+}
+}
+}
+console.log(content("hello","elloh"));
+
+
 /*                                     task D                                                      */ 
 /*   agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
-*/function checkContent(str1, str2) {
+// */
+// 
+// function checkContent(str1, str2) {
   
-  if (str1.length !== str2.length) {
-    console.log("Matnlar bir xil harflardan iborat emas");
-    return false;
-  }
+//   if (str1.length !== str2.length) {
+//     console.log("Matnlar bir xil harflardan iborat emas");
+//     return false;
+//   }
 
   
-  const sorted1 = str1.split('').sort().join('');
-  const sorted2 = str2.split('').sort().join('');
+//   const sorted1 = str1.split('').sort().join('');
+//   const sorted2 = str2.split('').sort().join('');
 
-  if (sorted1 === sorted2) {
-    console.log("Matnlar bir xil harflardan iborat");
-    return true;
-  } else {
-    console.log(true);
-    console.log("Matnlar bir xil harflardan iborat emas");
-    return false;
-  }
-}
- console.log("Natija:", checkContent("rewq3", "k3wer"));
+//   if (sorted1 === sorted2) {
+//     console.log("Matnlar bir xil harflardan iborat");
+//     return true;
+//   } else {
+//     console.log(true);
+//     console.log("Matnlar bir xil harflardan iborat emas");
+//     return false;
+//   }
+// }
+//  console.log("Natija:", checkContent("rewq3", "k3wer"));
 
 
 

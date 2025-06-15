@@ -22,10 +22,12 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//2: Session
+//2: Session (Authentication)
 //3:Views code
 app.set('views', 'views2');
 app.set('view engine', 'ejs');
+
+//4: Routes code API BSSR 
 
 
 app.post("/create-item", function (req, res) {
