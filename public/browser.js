@@ -27,12 +27,17 @@ e.preventDefault();
 axios
 .post("/create-item",{reja: createField.value})
 .then((response)=>{
+  if(createField.value === ""){
+    alert("Please enter a task.");
+  }else{
     document.getElementById("item-list").insertAdjacentHTML("beforeend",itemTemplate(response.data))
     createField.value = "";
     createField.focus();
+    }
 })
 .catch((err)=>{
     console.log("Try again later");
+    
 })
 });
 
