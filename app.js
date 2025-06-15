@@ -34,9 +34,11 @@ app.post("/create-item", function (req, res) {
      console.log("user entered /create-item");
     console.log(req.body);
     const new_reja = req.body.reja;
+    if (new_reja !== "") {
     db.collection("plans").insertOne({reja:new_reja},(err,data)=>{
      res.json(data.ops[0])
     });
+}
 });
 
 

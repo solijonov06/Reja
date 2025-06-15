@@ -39,7 +39,7 @@ axios
 document.addEventListener("click", function(e) {
   console.log(e.target);
    if(e.target.classList.contains("delete-me")){
-    if(confirm("Aniq o'chhirmoqchimisiz?")){
+    if(confirm("Aniq o'chirmoqchimisiz?")){
       axios.post("/delete-item",{id: e.target.getAttribute("data-id")})
       .then((response) => {
         console.log(response.data);
@@ -49,10 +49,11 @@ document.addEventListener("click", function(e) {
         console.log("Something went wrong, try again later.");
       });
     }
+  }
     // else{
     //   alert("No deb javob berildi.")
     // }
-   }
+ 
   //  { alert("You pressed delete button")}
 
 
@@ -80,10 +81,18 @@ document.addEventListener("click", function(e) {
 });
 
 
-document.getElementById("clean-all").addEventListener("click", function() {
-  axios.post("/delete-all",{delete_all: true}).then(response=>{
-    console.log(response.data);
-    document.location.reload();
+ document.getElementById("clean-all").addEventListener("click", function() {
+  if(confirm("Hammasini o'chirmoqchimiz?")){
   
-  })
-})
+   axios.post("/delete-all",{delete_all: true})
+   .then(response=>{
+     console.log(response.data);
+     document.location.reload();
+  
+   })
+  }
+ });
+
+
+  
+
