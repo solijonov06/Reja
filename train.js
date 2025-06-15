@@ -1,15 +1,28 @@
-function content (string1,string2){
-    for(i of string1){
-      for(b of string2){
-   if(i == b){
-   console.log(true);
-} else{
- console.log(false);
+/*MIT task-E*/ 
+/*E-TASK: 
+
+Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"*/
+
+function getReverse(str) {
+  return str.split('').reverse().join('');
 }
-}
-}
-}
-console.log(content("hello","elloh"));
+
+console.log(getReverse("assalomu alaykum"));
+console.log(getReverse("hit"));
+
+// function content (string1,string2){
+//     for(i of string1){
+//       for(b of string2){
+//    if(i == b){
+//    console.log(true);
+// } else{
+//  console.log(false);
+// }
+// }
+// }
+// }
+// console.log(content("hello","elloh"));
 
 
 /*                                     task D                                                      */ 
