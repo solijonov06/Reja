@@ -28,7 +28,7 @@ axios
 .post("/create-item",{reja: createField.value})
 .then((response)=>{
   if(createField.value === ""){
-    alert("Please enter a task.");
+    alert("iltimos, reja qo'shing");
   }else{
     document.getElementById("item-list").insertAdjacentHTML("beforeend",itemTemplate(response.data))
     createField.value = "";

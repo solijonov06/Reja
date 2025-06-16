@@ -41,7 +41,7 @@
         class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
       <span class="item-text"> <%= item.reja%></span>
       <div>
-        <button  class="edit-me btn btn-secondary btn-sm mr-1">
+        <button data-id="<%= item._id%>" class="edit-me btn btn-secondary btn-sm mr-1">
           Change          
         </button>
         <button data-id="<%=item._id%>"  class="delete-me  btn btn-danger btn-sm " >Remove</button>
