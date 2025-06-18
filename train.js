@@ -1,15 +1,42 @@
+/*                   TASK-F
+
+Yagona string argumentga ega findDoublers nomli function tuzing
+Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa
+true yokida false natija qaytarsin.*/
+
+// function finddoublers(str){
+// for(i of str){
+//   str.split('').reverse().join('');
+//   if(str.indexOf(i) === str.lastIndexOf(i)){
+//     return true; // agar harf bir necha marta uchrasa true qaytaradi
+//   }
+// }
+// }
+
+function findDoublers(str) {
+  for (let i of str) {
+    if (str.indexOf(i) !== str.lastIndexOf(i)) {
+      return true; 
+    }
+  }
+  return false; 
+}
+console.log(findDoublers("hlo")); // true
+
+
+
 /*MIT task-E*/ 
 /*E-TASK: 
 
 Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
 MASALAN: getReverse("hello") return qilsin "olleh"*/
 
-function getReverse(str) {
-  return str.split('').reverse().join('');
-}
+// function getReverse(str) {
+//   return str.split('').reverse().join('');
+// }
 
-console.log(getReverse("assalomu alaykum"));
-console.log(getReverse("hit"));
+// console.log(getReverse("assalomu alaykum"));
+// console.log(getReverse("hit"));
 
 // function content (string1,string2){
 //     for(i of string1){
